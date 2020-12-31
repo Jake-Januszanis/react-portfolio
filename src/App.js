@@ -4,10 +4,18 @@ import { Button } from 'reactstrap';
 function App() {
   return (
     <div className="App">
-      <div className="homepage">
-        <h1 className='text-white display-1'>Jakes Portfolio</h1>
+        <div className="main-container text-white">
+          <h1 className="py-5">Jake Januszanis</h1>
+          <h2>Full Stack Web Developer</h2>
+          <div className="d-flex flex-row justify-content-around">
+          <p>Projects</p>
+          <p>About</p>
+          <p>Contact</p>
+          <p>Resume</p>
+          </div>
+        </div>
       </div>
-    </div>
+    
   );
 }
 

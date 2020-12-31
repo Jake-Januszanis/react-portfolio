@@ -14,10 +14,7 @@ code {
 
 
 .App {
-  text-align: center;
-}
-
-.homepage {
+  text-align: center; 
   background-image: url("./images/background-img.jpg");
   filter: brightness(70%);
   height: 100vh;
@@ -26,6 +23,9 @@ code {
   background-position: bottom;
 }
 
+.main-container {
+  background-color:rgba(151, 139, 139, 0.5);
+}
 
 
 
