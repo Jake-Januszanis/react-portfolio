@@ -1,14 +1,15 @@
 
+@import "./variables";
 
 .main-container {
-    width: 85%;
+    width: 50%;  ///85%
     // background-color:rgba(151, 139, 139, 0.5);
     color: white;
     position: absolute;
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-top: .1rem solid white;
+    // border-top: $thin-border;
     
   
     &__title {
@@ -20,7 +21,7 @@
       &-sub {
         font-size: 1.9rem;
         padding-bottom: 2rem; 
-        border-bottom: .1rem solid white; 
+        border-bottom: $thin-border; 
         margin-bottom: 0
       }
     }
@@ -37,13 +38,15 @@
         width: 40%;
         align-self: center;
         font-size: 1.3rem;
-        padding: .5rem 0;
-        border: .1rem solid white;
+        padding: .7rem 0;
+        border: $thin-border;
         border-top: none;
+        background-color: transparent;
+        color: white;
         
   
         &:first-child {
-          border-top: .1rem solid white;
+          border-top: $thin-border;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
         }
@@ -61,11 +64,43 @@
   
     }
     }
-  
+
     .divider {
       width: .1rem;
       height: 40px;
       margin: 0 auto;
       background-color: white;
     }
+    
+    @media all and (min-width: 1000px) {
+      .divider {
+        height: 4rem;
+      }
+
+      .main-container {
+        width: 40%;
+      
+      &__links {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-content: center;
+        
+       
+        &-text {
+          border: $thin-border;
+          border-right: none;
+
+          &:last-child, &:first-child {
+            border-radius: 0;
+          }
+          &:last-child {
+            border-right: $thin-border;
+          }
+        }
+      }
+    }
+  }
+
     

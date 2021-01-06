@@ -1,9 +1,24 @@
 
 import React from 'react';
-import "../css/home.scss"
+import "../css/home.scss";
+import { useState } from 'react';
+
 
 
 function Home() {
+
+    const [display, updateDisplay] = useState({
+        about:'',
+        projects: '',
+        contact: '',
+        resume: ''
+      })
+    
+      function displayModal (){
+          updateDisplay = ({
+
+          })
+      }
 
     return (
         <div className="main-container">
@@ -11,10 +26,10 @@ function Home() {
           <h2 className="main-container__title-sub">Full Stack Web Developer</h2>
           <div className="divider"></div>
           <div className="main-container__links">
-          <span className="main-container__links-text">Projects</span>
-          <span className="main-container__links-text">About</span>
-          <span className="main-container__links-text">Contact</span>
-          <span className="main-container__links-text">Resume</span>
+          <button className="main-container__links-text" onClick={displayModal}>About</button>
+          <button className="main-container__links-text">Projects</button>
+          <button className="main-container__links-text">Contact</button>
+          <button className="main-container__links-text">Resume</button>
           </div>
       </div>
     )
