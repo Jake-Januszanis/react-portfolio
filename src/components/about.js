@@ -1,14 +1,21 @@
-import { useState } from 'react';
-import '../css/about.scss'
 
-function About () {
-    const [display, setDisplay] = useState()
+import '../css/about.scss';
+import '../css/modals.scss';
 
-    return (
-        <div className="about-modal" style={{ display: 'block' }}>
-            <h1>About Modal</h1>
-        </div>
-    )
+function About ({display, close}) {
+    if (display === true) {
+        return (
+            <div className="modal-show">
+                About Modal
+                <button onClick={close} name="about">Close</button>
+            </div>
+        ) 
+    } else {
+        return (
+            <div className="modal-hide"></div>
+        )
+    }
+
 }
 
 export default About;
