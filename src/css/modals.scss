@@ -8,12 +8,14 @@
     display: block;
     background-color: rgba(0, 0, 0, 0.856);
     height: 80%;
-    width: 80%;
-    position: absolute;
+    width: 50%;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: slideDown 1s ease-in-out;
+    backdrop-filter: brightness(0);
+    border-radius: 5px;
 }
 
 @keyframes slideDown {
@@ -38,5 +40,12 @@
         opacity: 0;
         visibility: hidden;
         top:-10px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .modal-show {
+        width: 80%;
+        height: 100%;
     }
 }
