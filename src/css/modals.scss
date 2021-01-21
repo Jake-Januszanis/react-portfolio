@@ -1,6 +1,7 @@
 
 .modal-hide {
     display: none;
+    transition: slideOut 1s ease;
 }
 
 .modal-show {
@@ -18,6 +19,25 @@
     border-radius: 5px;
 }
 
+.modal-close-btn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: .5rem;
+    top: .5rem;
+    outline: none;
+    border: none;
+    
+    &:hover {
+        color: yellow;
+        transform: scale(1.1);
+        transition: 1s ease;
+    }
+}
+
 @keyframes slideDown {
     from {
         opacity: 0;
@@ -27,7 +47,6 @@
     to {
         opacity: 1;
         visibility: visible;
-        // transform: translateX(0);
     }
 }
 

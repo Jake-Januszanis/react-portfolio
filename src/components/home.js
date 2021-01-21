@@ -9,6 +9,7 @@ import Resume from './resume';
 
 
 
+
 export default function Home() {
 
     const [display, updateDisplay] = useState({
@@ -31,7 +32,7 @@ export default function Home() {
             [event.target.name]: false
         })
     }
-    
+
 
     return (
         <>

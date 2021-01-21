@@ -9,6 +9,7 @@
 
         &__title {
             font-size: 4rem;
+            font-style: italic;
         }
     }
 
@@ -29,6 +30,15 @@
             color: #fff;
             font-size: 1.4rem;
 
+            &:focus {
+                border-bottom-color: red;
+
+                &:valid {
+                    border-bottom-color: #06B6D4;
+                }
+            }
+
+
             &:focus ~ .contact-form-label,
             &:not(:focus):valid ~ .contact-form-label {
                 top: 1rem;
@@ -47,6 +57,14 @@
             outline: none;
             color: #fff;
             font-size: 1.4rem;
+
+            &:focus {
+                border-bottom-color: red;
+
+                &:valid {
+                    border-bottom-color: #06B6D4;
+                }
+            }
 
             &:focus ~ .contact-form-label,
             &:not(:focus):valid ~ .contact-form-label {
@@ -74,6 +92,8 @@
         font-size: 1.6rem;
         border-radius: 10px;
         border: $thin-border;
+        transform: scale(1);
+        transition: 1s ease all;
 
         &:hover {
             background-color: #fff;
@@ -84,64 +104,3 @@
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //         // display: flex;
-    //         // flex-direction: column;
-    //         // margin: 0 auto;
-    //         // width: 45%;
-    //         // text-align: left;
-           
-    
-    
-    //         &__input {
-    //             font-size: 2rem;
-    //             background: none;
-    //             border: none;
-    //             border-bottom: $thin-border;
-    //             outline: none;
-    //             color: #fff;
-    
-    
-    //         }
-    
-    //         &__label {
-    //             font-size: 1.5rem; 
-    //             margin-top: 2rem;
-    //             position: relative;
-    //             top: 1.5rem;
-    //             pointer-events: none;
-                
-    //         }
-    
-           
-    //     }
-    // }
-    
-    // .input-field{
-    //         display: flex;
-    //         flex-direction: column;
-    //         margin: 0 auto;
-    //         width: 45%;
-    //         text-align: left;
-    // }
