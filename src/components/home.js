@@ -33,9 +33,22 @@ export default function Home() {
         })
     }
 
+    const handleKeyDown = e => {
+        if (e.key === "Escape") {
+            updateDisplay({
+                about: false,
+                projects: false,
+                contact: false,
+                resume: false
+            })
+        } 
+    }
+
+    
+
 
     return (
-        <>
+        <div className="home" onKeyDown={handleKeyDown} tabIndex={0}>
         <div className="main-container">
           <h1 className="main-container__title-primary">Jake Januszanis</h1>
           <h2 className="main-container__title-sub">Full Stack Web Developer</h2>
@@ -52,7 +65,7 @@ export default function Home() {
       <Projects display={display.projects} close={hideModal} />
       <Contact display={display.contact} close={hideModal} />
       <Resume display={display.resume} close={hideModal} />
-      </>
+      </div>
     )
 }
 

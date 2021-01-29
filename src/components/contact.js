@@ -31,7 +31,7 @@ const Contact = ({display, close}) => {
                     </div>
 
                     <div className="contact-form-holder">
-                        <textarea className="contact-form-textarea" rows="5" cols="33" name="message" required></textarea>
+                        <textarea className="contact-form-textarea" rows="5" cols="33" minLength="7" maxLength="500" name="message" required></textarea>
                         <span className="contact-form-label">Message:</span>
                     </div>
                     <button className="submit-button" type="submit">Send</button>

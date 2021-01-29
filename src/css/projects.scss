@@ -1,1 +1,94 @@
 
+
+.project-modal {
+    
+    &__title {
+        font-size: 3rem;
+        margin: 0 0 2rem 0;
+        font-style: italic;
+    }
+
+
+    &-container {
+        display: flex;
+        margin: 2rem auto;
+        width: 90%;
+
+        &__left {
+
+            &-gif {
+                height: 18rem;
+                width: 22rem;
+                border-radius: 13px;
+                margin: 1.5rem auto;
+                transition: 1s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 1s ease;
+                }
+                
+            }
+
+            &-img {
+                height: 15rem;
+                width: 22rem;
+                border-radius: 10px;
+                
+                margin: 1.5rem auto;
+                transition: 1s ease;
+
+                &:hover {
+                    transform: scale(1.15);
+                    transition: 1s ease;
+                }
+            }
+
+            &-buttons {
+                color: white;
+                font-size: 2rem;
+                text-decoration: none;
+                display: inline-block;
+                margin-left: .8rem;  
+            }
+        }
+        //Right side of project cards
+        &__right {
+            width: 70%;
+            margin-left: 3rem;
+            text-align: left;
+
+            &-title {
+                font-size: 2.2rem;
+                font-style: italic;
+                display: inline-block;
+                margin-right: 1rem;
+                margin-bottom:0;
+            }
+
+            &-description {
+                font-size: 1.3rem;
+            }
+
+            &-icons {
+                text-align: left;
+                font-size: 4rem;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+
+                &-title {
+                    font-size: 2rem;
+                    padding-top: .5rem;
+                   
+                }
+                 
+                &-item {
+                    font-size: 1.3rem;
+                    padding-left: 1rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

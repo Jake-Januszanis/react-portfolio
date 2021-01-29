@@ -2,20 +2,27 @@
 
 import '../css/modals.scss';
 import '../css/about.scss';
+
 import {FaJsSquare, FaReact, FaNode, FaHtml5, FaSass } from 'react-icons/fa'; 
 import {SiTailwindcss} from 'react-icons/si';
 import {CgCloseO} from 'react-icons/cg';
 
 
 const About = ({display, close}) => {
+
+    const handleKeyDown = e => {
+        console.log(e.key)
+    }
+
     if (display === true) {
         return (
-            <div className="modal-show">
+            <div onKeyDown={handleKeyDown} tabIndex={0} className="modal-show">
                 <div className="about-modal">
                
                 <button onClick={close} className="modal-close-btn" name='about'><CgCloseO style={{pointerEvents: 'none' }} /></button>
                 <div className="about-modal__title">About Me</div>
-                <p className="about-modal__text"></p>
+                <p className="about-modal__text">My name is Jake Januszanis and I am a full stack Web-Developer based out of Denver, CO. 
+                </p>
                 
                 <div className="about-modal__icons-container">
                    <FaJsSquare className='about-modal__icons' style={{color: '#fcdc00'}} title="Javascript" />
