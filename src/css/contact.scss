@@ -7,7 +7,7 @@
         max-width: 40rem;
         transition: ease-in-out 2s;
 
-        &__title {
+        &-title {
             font-size: 4rem;
             font-style: italic;
         }
@@ -101,6 +101,29 @@
             box-shadow: 0 0px 5px 5px rgba(250, 250, 250, 0.5);
             transform: scale(1.1);
             transition: 1s ease all;
+        }
+    }
+
+    @media all and (max-width: 700px) {
+
+        .contact-form {
+            &-label {
+                left: 4rem;
+            }
+
+            &-input, &-textarea {
+                &:focus ~ .contact-form-label,
+                &:not(:focus):valid ~ .contact-form-label {
+                    top: .3rem;
+                    left: 4rem;
+                    font-size: 1rem;
+                    transition: 1s ease all;
+                }
+            }
+        }
+        .contact-container-title {
+            font-size: 3rem;
+            margin: 1rem auto;
         }
     }
 

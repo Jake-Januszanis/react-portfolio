@@ -16,7 +16,7 @@ const Contact = ({display, close}) => {
             <button onClick={close} className="modal-close-btn" name='contact'><CgCloseO style={{pointerEvents: 'none' }} /></button>
 
 
-                <h1 className="contact-container__title">Lets work together</h1>
+                <h1 className="contact-container-title">Lets work together</h1>
 
                 <form className="contact-form">
                     

@@ -10,36 +10,45 @@
     &__text {
         font-size: 1.8rem;
         padding: 0 8rem;
+        margin-bottom: 3rem;
+        font-weight: 300;
     }
 
     &__icons-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding-top: 4rem;
         font-size: 7rem;
         width: 60%;
-        margin: 0 auto;
+        margin: 3rem auto;
     }
 
     &__icons {
         transform:scale(1);
         transition: ease-in-out .5s;
         margin-top: .5rem;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: ease-in-out, .5s;
+        }
+
+        &-title {
+            font-size: 3rem;
+            margin-top: 6rem;
+        }
+
+       
     }
-    &__icons:hover {
-        transform: scale(1.1);
-        transition: ease-in-out, .5s;
-    }
+    
+
+   
 }
 
 @media all and (max-width: 700px) {
     .about-modal {
-        width: 100%;
-        text-align: center;
 
         &__title {
-            padding-top: 0;
             margin-top: 1rem;
         }
 
@@ -47,7 +56,7 @@
             font-size: 1.4rem;
             width: 90%;
             padding: 0;
-            margin: 0 1rem;
+            margin: 1rem 1rem;
         }
 
         &__icons-container{

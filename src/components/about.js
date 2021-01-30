@@ -21,9 +21,12 @@ const About = ({display, close}) => {
                
                 <button onClick={close} className="modal-close-btn" name='about'><CgCloseO style={{pointerEvents: 'none' }} /></button>
                 <div className="about-modal__title">About Me</div>
-                <p className="about-modal__text">My name is Jake Januszanis and I am a full stack Web-Developer based out of Denver, CO. 
+                <p className="about-modal__text">My name is Jake Januszanis and I'm a Web-Developer based out of Denver, CO. My passion for coding
+                stemmed from my problem solving ability and my drive to keep learning each day.<br></br>
+                When I'm not staring at my code editor you can find me on the mats training Brazilian Jiu-Jitsu or in the mountains crushing some miles.
                 </p>
                 
+                <h1 className="about-modal__icons-title">Tech/Tools I've worked with</h1>
                 <div className="about-modal__icons-container">
                    <FaJsSquare className='about-modal__icons' style={{color: '#fcdc00'}} title="Javascript" />
                    <FaReact className='about-modal__icons' style={{color: '#61dafb'}} title="React"/>
