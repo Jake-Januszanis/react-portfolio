@@ -3,8 +3,8 @@
 import '../css/modals.scss';
 import '../css/about.scss';
 
-import {FaJsSquare, FaReact, FaNode, FaHtml5, FaSass } from 'react-icons/fa'; 
-import {SiTailwindcss} from 'react-icons/si';
+import {FaJsSquare, FaReact, FaNode, FaHtml5, FaSass, FaNpm, FaGithub } from 'react-icons/fa'; 
+import {SiTailwindcss, SiNetlify, SiHeroku} from 'react-icons/si';
 import {CgCloseO} from 'react-icons/cg';
 
 
@@ -31,6 +31,10 @@ const About = ({display, close}) => {
                    <FaHtml5 className='about-modal__icons' style={{color: '#f06529'}} title="HTML5"/>
                    <FaSass className='about-modal__icons' style={{ color: '#bf4080'}} title="Sass"/>
                    <SiTailwindcss className='about-modal__icons' style={{ color: '#06B6D4'}} title="Tailwind CSS"/>
+                   <FaNpm className='about-modal__icons' style={{ color: '#cb0000'}} title="Npm" />
+                   <FaGithub className='about-modal__icons' title="github" />
+                   <SiHeroku className='about-modal__icons' style={{ color: '#79589F'}} title="Heroku" />
+                   <SiNetlify className='about-modal__icons' style={{ color: '#15847D'}} title="Netlify" />
                 </div>
                 </div>
             </div>

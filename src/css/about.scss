@@ -14,9 +14,10 @@
 
     &__icons-container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         padding-top: 4rem;
         font-size: 7rem;
-        justify-content: space-around;
         width: 60%;
         margin: 0 auto;
     }
@@ -24,6 +25,7 @@
     &__icons {
         transform:scale(1);
         transition: ease-in-out .5s;
+        margin-top: .5rem;
     }
     &__icons:hover {
         transform: scale(1.1);
@@ -42,7 +44,7 @@
         }
 
         &__text {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             width: 90%;
             padding: 0;
             margin: 0 1rem;
@@ -51,9 +53,9 @@
         &__icons-container{
             width: 95%;
             display: flex;
-           flex-flow: wrap;
-           justify-content: space-evenly;
-           margin: 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0;
         }
 
         &__icons {

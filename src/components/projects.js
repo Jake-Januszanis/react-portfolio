@@ -34,8 +34,10 @@ function Projects ({display, close}) {
 
                     <div className='project-modal-container__right'>
                         <h2 className="project-modal-container__right-title">React Weather App</h2>
-                        <a className="project-modal-container__left-buttons" href="https://github.com/Jake-Januszanis/react-weather" target="_blank" rel="noreferrer"><FaGithub /></a>
-                        <a className="project-modal-container__left-buttons" href="https://react-weather-v2.herokuapp.com/" target="_blank" rel="noreferrer"><FaLink /></a>   
+                        
+                        <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/react-weather" target="_blank" rel="noreferrer"><FaGithub /></a>
+                        <a className="project-modal-container__right-buttons" href="https://react-weather-v2.herokuapp.com/" target="_blank" rel="noreferrer"><FaLink /></a>
+
                         <p className="project-modal-container__right-description">
                         Weather App created using React and Express. App takes 5 digit US zipcode and
                         retrives API data to display both current forecast or 5 day extended forecast. 
@@ -58,7 +60,7 @@ function Projects ({display, close}) {
 
                     <div className='project-modal-container__right'>
                         <h1 className="project-modal-container__right-title">Reactfolio</h1>
-                        <a className="project-modal-container__left-buttons" href="https://github.com/Jake-Januszanis/react-portfolio" target="_blank" rel="noreferrer"><FaGithub /></a>
+                        <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/react-portfolio" target="_blank" rel="noreferrer"><FaGithub /></a>
                         <p className="project-modal-container__right-description">
                         Portfolio created using React and Sass. Site hosted on Netlify server.
                         </p>
