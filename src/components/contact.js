@@ -13,12 +13,12 @@ const Contact = ({display, close}) => {
             <div className="modal-show">
 
             <div className="contact-container">
-            <button onClick={close} className="modal-close-btn" name='contact'><CgCloseO style={{pointerEvents: 'none' }} /></button>
+            <button onClick={close} className="modal-close-btn" name='contact'><CgCloseO style={{pointerEvents: 'none'}} /></button>
 
 
                 <h1 className="contact-container-title">Lets work together</h1>
 
-                <form className="contact-form">
+                <form className="contact-form" name="Portfolio-contact" data-netlify="true">
                     
                     <div className="contact-form-holder">
                         <input type="email" className="contact-form-input" name="email" required></input>
