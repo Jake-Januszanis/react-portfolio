@@ -55,7 +55,7 @@ function Projects ({display, close}) {
                     {/* Second Project Card */}
                     <div className="project-modal-container">
                     <div className="project-modal-container__left">
-                    <img className="project-modal-container__left-img" src={portImg.default} alt="Portfolio Site Image"></img>
+                    <img className="project-modal-container__left-img" src={portImg.default} alt="Portfolio Site"></img>
                     </div>
 
                     <div className='project-modal-container__right'>
@@ -84,9 +84,3 @@ function Projects ({display, close}) {
 }
 
 export default Projects;
-
-{/* <div className="project-modal-container__right-list-title">Built with:</div>
-                            <p className='project-modal-container__right-list-item'>React</p>
-                            <p className='project-modal-container__right-list-item'>Sass</p>
-                            <p className='project-modal-container__right-list-item'>Netlify</p>
-                        </div> */}
