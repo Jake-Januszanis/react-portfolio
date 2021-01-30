@@ -26,7 +26,7 @@ function Projects ({display, close}) {
                     <div className="project-modal-container">
                     <div className="project-modal-container__left">
                     <video className="project-modal-container__left-gif" onMouseEnter={loopVideo}>
-                        <source src={weatherGIF.default} type="video/mp4" />
+                        <source src={weatherGIF.default} type="video/mp4" alt="Weather App gif"/>
                         Sorry, your browser doesn't support embedded videos.
                     </video>
                                       
@@ -55,7 +55,7 @@ function Projects ({display, close}) {
                     {/* Second Project Card */}
                     <div className="project-modal-container">
                     <div className="project-modal-container__left">
-                    <img className="project-modal-container__left-img" src={portImg.default}></img>
+                    <img className="project-modal-container__left-img" src={portImg.default} alt="Portfolio Site Image"></img>
                     </div>
 
                     <div className='project-modal-container__right'>
