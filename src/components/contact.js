@@ -18,7 +18,7 @@ const Contact = ({display, close}) => {
 
                 <h1 className="contact-container-title">Lets work together</h1>
 
-                <form className="contact-form" name="Portfolio-contact" data-netlify="true">
+                <form className="contact-form" name="Portfolio-contact" method="POST" data-netlify="true">
                     
                     <div className="contact-form-holder">
                         <input type="email" className="contact-form-input" name="email" required></input>
