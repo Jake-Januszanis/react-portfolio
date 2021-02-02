@@ -7,7 +7,8 @@ import Projects from './projects';
 import Contact from './contact';
 import Resume from './resume';
 
-const resume = require("../images/Jake-Januszanis-Resume.pdf");
+const resume = require("../images/hidden-resume.pdf");
+
 
 
 
