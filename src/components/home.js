@@ -7,6 +7,8 @@ import Projects from './projects';
 import Contact from './contact';
 import Resume from './resume';
 
+const resume = require("../images/Jake-Januszanis-Resume.pdf");
+
 
 
 
@@ -44,6 +46,10 @@ export default function Home() {
         } 
     }
 
+    function openPdf() {
+        window.open(resume.default, "")
+    }
+
     
 
 
@@ -57,7 +63,7 @@ export default function Home() {
           <button className="main-container__links-text" onClick={showModal} name="about">About</button>
           <button className="main-container__links-text" onClick={showModal} name="projects">Projects</button>
           <button className="main-container__links-text" onClick={showModal} name="contact">Contact</button>
-          <button className="main-container__links-text" onClick={showModal} name="resume">Resume</button>
+          <button className="main-container__links-text" onClick={openPdf} name="resume">Resume</button>
           </div>
           
       </div>
