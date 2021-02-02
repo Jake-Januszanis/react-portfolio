@@ -7,7 +7,7 @@ import Projects from './projects';
 import Contact from './contact';
 import Resume from './resume';
 
-const resume = require("../images/hidden-resume.pdf");
+const resume = require("../images/Jake-Januszanis-Resume.pdf");
 
 
 
@@ -25,7 +25,7 @@ export default function Home() {
     let showModal = (event) => {
         updateDisplay({
             ...display,
-            [event.target.name]: true
+            [event.target.name]: true 
         })
     }
 
