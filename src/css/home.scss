@@ -21,7 +21,7 @@ body {
 
 .main-container {
     width: 60%;  
-    color: white;
+    color: $white-text;
     position: absolute;
     top: 32%;
     left: 50%;
@@ -58,7 +58,7 @@ body {
         border: $thin-border;
         border-top: none;
         background-color: transparent;
-        color: white;
+        color: $white-text;
         outline: none;
         cursor: pointer;
         
