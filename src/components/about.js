@@ -21,10 +21,7 @@ const About = ({display, close}) => {
                
                 <button onClick={close} className="modal-close-btn" name='about'><CgCloseO style={{pointerEvents: 'none' }} /></button>
                 <div className="about-modal__title">About Me</div>
-                <p className="about-modal__text">Hi I'm Jake Januszanis and I am a Web-Developer based out of Denver, CO. My passion for coding stemmed from 
-                my problem solving ability and my drive to keep learning new skills each day. For some picking a career which requires you to consistently keep 
-                learning and adapting may sound daunting, but for me its what excites me about this industry. 
-                </p>
+                <p className="about-modal__text">Hi I'm Jake Januszanis and I am a Web-Developer based out of Denver, CO.</p>
                 
                 <h1 className="about-modal__icons-title">Tech/Tools I've worked with</h1>
                 <div className="about-modal__icons-container">
