@@ -3,7 +3,7 @@
 import '../css/modals.scss';
 import '../css/about.scss';
 
-import {FaJsSquare, FaReact, FaNode, FaHtml5, FaSass, FaNpm, FaGithub } from 'react-icons/fa'; 
+import {FaJsSquare, FaReact, FaNode, FaHtml5, FaSass, FaNpm, FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import {SiTailwindcss, SiNetlify, SiHeroku} from 'react-icons/si';
 import {CgCloseO} from 'react-icons/cg';
 
@@ -22,6 +22,9 @@ const About = ({display, close}) => {
                 <button onClick={close} className="modal-close-btn" name='about'><CgCloseO style={{pointerEvents: 'none' }} /></button>
                 <div className="about-modal__title">About Me</div>
                 <p className="about-modal__text">Hi I'm Jake Januszanis and I am a Web-Developer based out of Denver, CO.</p>
+
+                <a className="about-modal__link" href="https://github.com/Jake-Januszanis" target="_blank" rel="noreferrer"><FaGithub /></a>
+                <a className="about-modal__link" href="https://www.linkedin.com/in/jake-januszanis" target="_blank" rel="noreferrer"><FaLinkedin /></a>
                 
                 <h1 className="about-modal__icons-title">Tech/Tools I've worked with</h1>
                 <div className="about-modal__icons-container">

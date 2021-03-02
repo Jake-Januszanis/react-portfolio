@@ -37,7 +37,7 @@ function Projects ({display, close}) {
                         
                         <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/react-weather" target="_blank" rel="noreferrer"><FaGithub /></a>
                         <a className="project-modal-container__right-buttons" href="https://react-weather-v2.herokuapp.com/" target="_blank" rel="noreferrer"><FaLink /></a>
-
+                        
                         <p className="project-modal-container__right-description">
                         Weather App created using React and Express. App takes 5 digit US zipcode and
                         retrives API data to display both current forecast or 5 day extended forecast. 

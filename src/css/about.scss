@@ -16,13 +16,19 @@
         line-height: 140%;
     }
 
+    &__link {
+        color: #fbfbfb;
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
     &__icons-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         font-size: 7rem;
         width: 60%;
-        margin: 3rem auto;
+        margin: 2rem auto;
         padding-bottom: 4rem;
     }
 
@@ -38,12 +44,12 @@
 
         &-title {
             font-size: 3rem;
-            margin-top: 6rem;
+            margin-top: 3rem;
         }
     }  
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 1000px) {
 
     .about-modal {
 
