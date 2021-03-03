@@ -3,11 +3,12 @@
 import '../css/projects.scss';
 import '../css/modals.scss';
 import {CgCloseO} from 'react-icons/cg';
-import {FaLink, FaGithub, FaReact, FaSass, FaNode} from 'react-icons/fa';
-import {SiNetlify, SiHeroku, SiTailwindcss} from 'react-icons/si';
+import {FaLink, FaGithub} from 'react-icons/fa';
+
 
 const weatherGIF = require('../images/weather-appGIF.mp4');
 const portImg = require('../images/PortfolioImgCrop.png');
+const pomoTimerGIF = require('../images/pomo3.mp4');
 
 function Projects ({display, close}) {
 
@@ -34,25 +35,43 @@ function Projects ({display, close}) {
 
                     <div className='project-modal-container__right'>
                         <h2 className="project-modal-container__right-title">React Weather App</h2>
+                        <h3 className="project-modal-container__right-title-sm">(React, Tailwind CSS, Express, Heroku)</h3>
                         
                         <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/react-weather" target="_blank" rel="noreferrer"><FaGithub /></a>
                         <a className="project-modal-container__right-buttons" href="https://react-weather-v2.herokuapp.com/" target="_blank" rel="noreferrer"><FaLink /></a>
+
+                        <p className="project-modal-container__right-description">
+                        Weather App that takes 5 digit US zipcode and retrieves API data to display both current forecast or 5 day extended forecast. Code was written
+                        using updated syntax including React hooks and Javascript ES6 aysnc/await functions for improved performance
+                        </p>
+                    </div>
+                    </div>
+               
+                {/* Second project card */}
+                    <div className="project-modal-container">
+                    <div className="project-modal-container__left">
+                    <video className="project-modal-container__left-gif" onMouseEnter={loopVideo}>
+                        <source className="project-modal-container__left-gif" src={pomoTimerGIF.default}  alt="Pomodoro Timer App gif" />
+                       
+                    </video>
+                                      
+                    </div>
+
+                    <div className='project-modal-container__right'>
+                        <h2 className="project-modal-container__right-title">Pomodoro Timer</h2>
+                        <h3 className="project-modal-container__right-title-sm">(HTML, SASS, JavaScript, EJS, Express, Mongoose, MongoDB)</h3>
+                        
+                        <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/pomodoro-timer" target="_blank" rel="noreferrer"><FaGithub /></a>
                         
                         <p className="project-modal-container__right-description">
-                        Weather App created using React and Express. App takes 5 digit US zipcode and
-                        retrives API data to display both current forecast or 5 day extended forecast. 
+                        Pomodoro timer app created to help users study more efficiently. App has register/login page with validation to allow users to keep track
+                        of time spent studying and save their progress to MongoDB database.
                         </p>
-                        <div className="project-modal-container__right-icons">
-                        <FaReact style={{color: '#61dafb'}} title="React"/>
-                        <FaNode style={{color: "#43853d"}} title="Node.js"/>
-                        <SiTailwindcss style={{ color: '#06B6D4'}} title="Tailwind CSS"/>
-                        <SiHeroku style={{ color: '#79589F'}} title="Heroku" />
-                        </div>
                     </div>
                    
                     </div>
 
-                    {/* Second Project Card */}
+                    {/* Third Project Card */}
                     <div className="project-modal-container">
                     <div className="project-modal-container__left">
                     <img className="project-modal-container__left-img" src={portImg.default} alt="Portfolio Site"></img>
@@ -60,16 +79,12 @@ function Projects ({display, close}) {
 
                     <div className='project-modal-container__right'>
                         <h1 className="project-modal-container__right-title">Reactfolio</h1>
+                        <h3 className="project-modal-container__right-title-sm">(React, SASS, Netlify)</h3>
                         <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/react-portfolio" target="_blank" rel="noreferrer"><FaGithub /></a>
                         <p className="project-modal-container__right-description">
-                        Portfolio created using React and Sass. Site hosted on Netlify server.
+                        Portfolio created using React and Sass to showcase projects and resume for potential employers. Website is fully responsive and is currently hosted 
+                        on Netlify.
                         </p>
-                        <div className="project-modal-container__right-icons">
-                        <FaReact  style={{color: '#61dafb'}} title="React" />
-                        <FaSass style={{ color: '#bf4080'}} title="Sass"/>
-                        <SiNetlify style={{ color: '#15847D'}} title="Netlify" />
-                    </div>
-                   
                     </div>
                     </div>
                 </section>
