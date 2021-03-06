@@ -41,8 +41,7 @@ function Projects ({display, close}) {
                         <a className="project-modal-container__right-buttons" href="https://react-weather-v2.herokuapp.com/" target="_blank" rel="noreferrer"><FaLink /></a>
 
                         <p className="project-modal-container__right-description">
-                        Weather App that takes 5 digit US zipcode and retrieves API data to display both current forecast or 5 day extended forecast. Code was written
-                        using updated syntax including React hooks and Javascript ES6 aysnc/await functions for improved performance
+                        Weather App that takes 5 digit US zipcode and retrieves API data to display both current forecast or 5 day extended forecast.
                         </p>
                     </div>
                     </div>
@@ -64,8 +63,8 @@ function Projects ({display, close}) {
                         <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/pomodoro-timer" target="_blank" rel="noreferrer"><FaGithub /></a>
                         
                         <p className="project-modal-container__right-description">
-                        Pomodoro timer app created to help users study more efficiently. App has register/login page with validation to allow users to keep track
-                        of time spent studying and save their progress to MongoDB database.
+                        Pomodoro timer app created to help users study more efficiently. App allows users to create an account and log their daily progress
+                        to keep track of time spent studying each day. 
                         </p>
                     </div>
                    
