@@ -69,23 +69,6 @@ function Projects ({display, close}) {
                     </div>
                    
                     </div>
-
-                    {/* Third Project Card */}
-                    <div className="project-modal-container">
-                    <div className="project-modal-container__left">
-                    <img className="project-modal-container__left-img" src={portImg.default} alt="Portfolio Site"></img>
-                    </div>
-
-                    <div className='project-modal-container__right'>
-                        <h1 className="project-modal-container__right-title">Reactfolio</h1>
-                        <h3 className="project-modal-container__right-title-sm">(React, SASS, Netlify)</h3>
-                        <a className="project-modal-container__right-buttons" href="https://github.com/Jake-Januszanis/react-portfolio" target="_blank" rel="noreferrer"><FaGithub /></a>
-                        <p className="project-modal-container__right-description">
-                        Portfolio created using React and Sass to showcase projects and resume for potential employers. Website is fully responsive and is currently hosted 
-                        on Netlify.
-                        </p>
-                    </div>
-                    </div>
                 </section>
             </div>
         ) 
