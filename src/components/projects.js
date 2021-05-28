@@ -7,7 +7,6 @@ import {FaLink, FaGithub} from 'react-icons/fa';
 
 
 const weatherGIF = require('../images/weather-appGIF.mp4');
-const portImg = require('../images/PortfolioImgCrop.png');
 const pomoTimerGIF = require('../images/pomo3.mp4');
 
 function Projects ({display, close}) {
@@ -29,8 +28,7 @@ function Projects ({display, close}) {
                     <video className="project-modal-container__left-gif" onMouseEnter={loopVideo}>
                         <source src={weatherGIF.default} type="video/mp4" alt="Weather App gif"/>
                         Sorry, your browser doesn't support embedded videos.
-                    </video>
-                                      
+                    </video>             
                     </div>
 
                     <div className='project-modal-container__right'>

@@ -5,7 +5,6 @@ import { useState } from 'react';
 import About from './about';
 import Projects from './projects';
 import Contact from './contact';
-import Resume from './resume';
 const resume = require("../images/Jake-Januszanis-Resume.pdf");
 
 export default function Home() {
@@ -66,10 +65,10 @@ export default function Home() {
       <About display={display.about} close={hideModal} />
       <Projects display={display.projects} close={hideModal} />
       <Contact display={display.contact} close={hideModal} />
-      <Resume display={display.resume} close={hideModal} />
       </div>
     )
 }
+
 
 
 
