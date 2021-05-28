@@ -52,7 +52,7 @@ export default function Home() {
         <div className="home" onKeyDown={handleKeyDown} tabIndex={0}>
         <div className="main-container">
           <h1 className="main-container__title-large">Jake Januszanis</h1>
-          <h2 className="main-container__title-small">Frontend Web Developer</h2>
+          <h2 className="main-container__title-small">Full-Stack Web Developer</h2>
           <div className="divider"></div>
           <div className="main-container__links">
           <button className="main-container__links-btn" onClick={showModal} name="about">About</button>
