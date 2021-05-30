@@ -20,7 +20,7 @@
             position: relative;
         }
 
-        &-input {
+        &-input, &-textarea {
             background-color: transparent;
             border: none;
             border-bottom: $thin-border;
@@ -30,47 +30,22 @@
             color: #fff;
             font-size: 1.4rem;
 
-            &:focus {
-                border-bottom-color: red;
-
-                &:valid {
-                    border-bottom-color: #06B6D4;
-                }
+            &[type=textarea] {
+                height: 4rem;
             }
 
+            &:focus {
+                border-bottom-color: red;
+            }
+            &:valid {
+                border-bottom-color: #06B6D4;
+            }
 
-            &:focus ~ .contact-form-label,
-            &:not(:focus):valid ~ .contact-form-label {
+            &:focus ~ label,
+            &:not(:placeholder-shown) ~ label {
                 top: 1rem;
                 left: 6rem;
                 font-size: .9rem;
-                transition: 1s ease all;
-            }
-        }
-
-        &-textarea {
-            background-color: transparent;
-            border: none;
-            border-bottom: $thin-border;
-            width: 80%;
-            height: 4rem;
-            outline: none;
-            color: #fff;
-            font-size: 1.4rem;
-
-            &:focus {
-                border-bottom-color: red;
-
-                &:valid {
-                    border-bottom-color: #06B6D4;
-                }
-            }
-
-            &:focus ~ .contact-form-label,
-            &:not(:focus):valid ~ .contact-form-label {
-                top: .6rem;
-                left: 5.7rem;
-                font-size: 1rem;
                 transition: 1s ease all;
             }
         }
@@ -95,6 +70,7 @@
         transform: scale(1);
         transition: 1s ease all;
         margin-bottom: 2rem;
+        cursor: pointer;
 
         &:hover {
             background-color: #fff;

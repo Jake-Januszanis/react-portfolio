@@ -21,18 +21,18 @@ const Contact = ({display, close}) => {
                 <form className="contact-form" name="contact" method="post">
                     <input type="hidden" name="form-name" value="contact"></input>
                     <div className="contact-form-holder">
-                        <input type="email" className="contact-form-input" name="email" required></input>
-                        <span className="contact-form-label">Email:</span>
+                        <input type="email" className="contact-form-input" name="email" placeholder=" " required></input>
+                        <label className="contact-form-label" htmlFor="email">Email:</label>
                     </div>
 
                     <div className="contact-form-holder">
-                        <input type="text" className="contact-form-input" name="name" required></input>
-                        <span className="contact-form-label">Full Name:</span>
+                        <input type="text" className="contact-form-input" name="name" placeholder=" " required></input>
+                        <label className="contact-form-label" htmlFor="name">Full Name:</label>
                     </div>
 
                     <div className="contact-form-holder">
-                        <textarea className="contact-form-textarea" rows="5" cols="33" minLength="7" maxLength="500" name="message" required></textarea>
-                        <span className="contact-form-label">Message:</span>
+                        <textarea className="contact-form-textarea" type="textarea" rows="5" cols="33" minLength="7" maxLength="500" name="message" placeholder=" " required></textarea>
+                        <label className="contact-form-label" htmlFor="message">Message:</label>
                     </div>
                     <button className="submit-button" type="submit">Send</button>
                 </form>
